@@ -1,6 +1,6 @@
 // An example configuration file.
 
-var HtmlScreenshotReporter = require('C:/Users/visha/AppData/Roaming/npm/node_modules/protractor/node_modules/protractor-jasmine2-screenshot-reporter');
+var HtmlScreenshotReporter = require('C:/Users/tester/AppData/Roaming/npm/node_modules/protractor/node_modules/protractor-jasmine2-screenshot-reporter');
 var reporter = new HtmlScreenshotReporter({
   dest: 'target/screenshots',
   filename: 'my-report.html'
@@ -36,7 +36,7 @@ exports.config = {
   // Assign the test reporter to each running instance
   onPrepare: function () {
 
-    var jasmineReporters = require('C:/Users/visha/AppData/Roaming/npm/node_modules/protractor-html-reporter-2/node_modules/jasmine-reporters');
+    var jasmineReporters = require('C:/Users/tester/AppData/Roaming/npm/node_modules/protractor-html-reporter-2/node_modules/jasmine-reporters');
     jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
       consolidateAll: true,
       savePath: './',
@@ -44,7 +44,7 @@ exports.config = {
     }));
 
 
-    var fs = require('C:/Users/visha/AppData/Roaming/npm/node_modules/protractor-html-reporter-2/node_modules/fs-extra');
+    var fs = require('C:/Users/tester/AppData/Roaming/npm/node_modules/protractor-html-reporter-2/node_modules/fs-extra');
 
     fs.emptyDir('screenshots/', function (err) {
       console.log(err);
@@ -68,7 +68,7 @@ exports.config = {
 
 
     jasmine.getEnv().addReporter(reporter);
-    var AllureReporter = require('C:/Users/visha/AppData/Roaming/npm/node_modules/jasmine-allure-reporter');
+    var AllureReporter = require('C:/Users/tester/AppData/Roaming/npm/node_modules/jasmine-allure-reporter');
     jasmine.getEnv().addReporter(new AllureReporter({
       resultsDir: 'allure-results'
     }));
@@ -92,7 +92,7 @@ exports.config = {
       browserVersion = caps.get('version');
       platform = caps.get('platform');
 
-      var HTMLReport = require('C:/Users/visha/AppData/Roaming/npm/node_modules/protractor-html-reporter-2');
+      var HTMLReport = require('C:/Users/tester/AppData/Roaming/npm/node_modules/protractor-html-reporter-2');
 
       testConfig = {
         reportTitle: 'Protractor Test Execution Report',

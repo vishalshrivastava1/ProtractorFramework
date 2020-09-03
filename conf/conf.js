@@ -1,4 +1,4 @@
-var HtmlReporter = require("C:/Users/visha/AppData/Roaming/npm/node_modules/protractor/node_modules/protractor-beautiful-reporter");
+var HtmlReporter = require("C:/Users/tester/AppData/Roaming/npm/node_modules/protractor/node_modules/protractor-beautiful-reporter");
 
 // An example configuration file.
 exports.config = {
